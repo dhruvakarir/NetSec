@@ -1,0 +1,35 @@
+// For converting plaintext to ciphertext
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define pb push_back
+
+int main(){
+  
+    string s;
+    getline(cin,s);
+    int k,i=s.length();
+    while(i--){
+      if(s[i]>='A' && s[i]<='Z'){
+        if(s[i]<='M'){
+         k=int('Z'-s[i]);
+         s[i]=char(k+'A');}
+        else{
+         k=int(s[i]-'A');
+         s[i]=char('Z'-k);
+          
+        }
+        //i++; 
+      }
+      else if(s[i]>='a' && s[i]<='z'){
+        if(s[i]<='m'){
+         k=int('z'-s[i]);
+         s[i]=char(k+'a');}
+        else{
+         k=int(s[i]-'a');
+         s[i]=char('z'-k);}
+        //i++; 
+      }
+    }
+    cout<<s;
+}
