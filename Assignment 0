@@ -1,4 +1,4 @@
-// For converting plaintext to ciphertext
+// For converting plaintext to ciphertext or vice versa
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
